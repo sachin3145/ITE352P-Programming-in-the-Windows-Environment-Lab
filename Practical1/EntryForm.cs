@@ -16,5 +16,13 @@
         {
             displayMessageLabel.Text = $"Why So Serious? 🤡";
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+            this.Show();
+        }
     }
 }
