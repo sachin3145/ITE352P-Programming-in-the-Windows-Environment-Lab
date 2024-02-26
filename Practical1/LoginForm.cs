@@ -24,7 +24,10 @@ namespace Practical1
         {
             if (userId == userIDText.Text && password == passwordText.Text)
             {
-                // connect to calculator form
+                this.Hide();
+                CalculatorForm calculatorForm = new CalculatorForm();
+                calculatorForm.ShowDialog();
+                this.Show();
             }
             else
             {
